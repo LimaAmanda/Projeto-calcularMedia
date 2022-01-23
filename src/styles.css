@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+
+body{
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #cc488a 16.62%, #095da1 85.61%);
+}
+
+.col{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 18px;
+    color:#380a36 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .form-codigoRMA{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 18px;
+    color:#380a36 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+  .Form-NomeAluno{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 18px;
+    color:#380a36 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+
+
+
+
+
+

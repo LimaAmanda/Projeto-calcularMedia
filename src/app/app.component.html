@@ -1,13 +1,12 @@
-<h1>Seja bem vindo ao sistema para cálculo de médias.</h1>
-     <h2> Sistema  de consulta de médias aberto.</h2>
-<img [src]="foto" class="card-img-top" alt="..."/>
+<h1> Seja bem vindo(a) ao sistema para cálculo de médias.</h1>
 
-<form>
+<h2> Sistema  de consulta de médias aberto.</h2>
 
   <div class="Form-NomeAluno">
      <label for="Form-NomeAluno">Nome : </label>
      <input type="text" class="Form-NomeAluno" id="form-nomeAluno" placeholder="Insira seu nome :">
      </div>
+
      <div class="form-codigoRMA">
       <label for="form-codigoRMA">código RMA:</label>
       <input type="text" class="form-codigoRMA" id="form-CodigoRMA"placeholder="Insira o codigo RMA :">
@@ -16,16 +15,22 @@
       <div class="row">
        <div class="col">
          <input type="number" class="form=control" placeholder="Insira a 1° Nota">
-         </div>
 
          <div class="col">
            <input type="number" class="form-control" placeholder="Insira a 2° Nota">
+
+           <div class="col">
+            <input type="number" class="form-control" placeholder="Insira a 3° Nota">
+
+            <div class="col">
+              <input type="number" class="form-control" placeholder="Insira a 4° Nota">
 
            validade:{{datavalidade | date: 'shortDate'}}
 
            </div>
       </div>
 
+      <img [src]="foto" class="card-img-top" alt=" Desenho calculadora"/>
 
 
 
