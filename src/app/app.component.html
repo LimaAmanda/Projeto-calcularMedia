@@ -1,42 +1,49 @@
-<h1> Seja bem vindo(a) ao sistema para cálculo de médias.</h1>
+<h1>Seja bem vindo(a) ao sistema para cálculo de médias.</h1>
 
-<h2> Sistema  de consulta de médias aberto.</h2>
+<h2>Sistema de consulta de médias aberto.</h2>
 
-  <div class="Form-NomeAluno">
-     <label for="Form-NomeAluno">Nome : </label>
-     <input type="text" class="Form-NomeAluno" id="form-nomeAluno" placeholder="Insira seu nome :">
-     </div>
+<div class="card" style="width: 18rem"></div>
 
-     <div class="form-codigoRMA">
-      <label for="form-codigoRMA">código RMA:</label>
-      <input type="text" class="form-codigoRMA" id="form-CodigoRMA"placeholder="Insira o codigo RMA :">
-      </div>
+<div class="card-body"></div>
 
-      <div class="row">
-       <div class="col">
-         <input type="number" class="form=control" placeholder="Insira a 1° Nota">
+<div class="Form-NomeAluno">
+  <label for="Form-NomeAluno">Nome : </label>
+  <input
+    type="text"
+    class="Form-NomeAluno"
+    id="form-nomeAluno"
+    placeholder="Insira seu nome :"
+  />
+</div>
 
-         <div class="col">
-           <input type="number" class="form-control" placeholder="Insira a 2° Nota">
+<br />
+<div class="form-codigoRMA">
+  <label for="form-codigoRMA">código RMA:</label>
+  <input
+    type="text"
+    class="form-codigoRMA"
+    id="form-CodigoRMA"
+    placeholder="Insira o codigo RMA :"
+  />
 
-           <div class="col">
-            <input type="number" class="form-control" placeholder="Insira a 3° Nota">
+  <br />
 
-            <div class="col">
-              <input type="number" class="form-control" placeholder="Insira a 4° Nota">
+  validade:{{ datavalidade | date: "shortDate" }}
+</div>
 
-           validade:{{datavalidade | date: 'shortDate'}}
+<h3> Notas.</h3>
+<h3>{{ nota1 }}</h3>
+<h3>{{ nota2 }}</h3>
+<h3>{{ nota3 }}</h3>
+<h3>{{ nota4 }}</h3>
 
-           </div>
-      </div>
+<p class="card-text">{{ media | number: "1.1-1" }} </p>
+<span *ngIf="media >= 7; else elseBlock"
+  class="badge badge-primary">Aprovado</span>
+<ng-template #elseBlock>
+  <span class="badge badge-danger">Reprovado</span>
+</ng-template>
 
-      <img [src]="foto" class="card-img-top" alt=" Desenho calculadora"/>
+<br />
 
-
-
-
-
-
-
-
-
+<img [src]="foto" class="card-img-top" alt=" Desenho calculadora" />

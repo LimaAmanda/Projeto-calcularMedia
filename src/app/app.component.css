@@ -1,37 +1,68 @@
-
-h1{
+h1 {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   font-weight: 400;
   font-size: 30px;
-  color:#4d0f49 ;
+  color: #4d0f49;
   display: flex;
   margin-bottom: 16px;
   margin-top: 48px;
-  border-top: 0.4px solid #c1c1cc;
+  border-top: 0.4px solid #191970;
 }
 
-h2{
-
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    font-family: 'Righteous', cursive;
-    font-weight: 400;
-    font-size: 28px;
-    color:#6e053f ;
-    display: flex;
-
-
+h2 {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 28px;
+  color: #6e053f;
+  display: flex;
 }
-.card-img-top{
+.card-img-top {
   margin-bottom: 16px;
   margin-top: 48px;
-  border-top: 0.4px solid #c1c1cc;
+  border-top: 0.8px solid #22227c;
 }
 
+.h3 {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  color: #380a36;
+}
+
+.card-text {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 19px;
+  color: #550a51;
+}
+
+.badge-danger {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  color: #550a51;
+}
+
+.badge badge-primary{
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  color: #550a51;
+}
 
